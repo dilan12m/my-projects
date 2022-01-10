@@ -121,68 +121,11 @@ for i = 1:m
                         F=-(D/dnm);         
                         Fx(kk)=Fx(kk)+F.*dxp;                   
                         Fy(kk)=Fy(kk)+F.*dyp;  
-% %                         for nn=1:N 
-% %                           for mm=nn+1:N  
-% %                             Fx(nn)= F.*dx;     
-% %                             Fx(mm)= - F.*dx;     
-% %                             Fy(nn)= F.*dy;    
-% %                             Fy(mm)=- F.*dy; 
-% %                           end
-% %                         end
-
                   end
             end
-%   for nn=1:N 
-%     for mm=nn+1:N    
-%        dy=y(mm)-y(nn);            
-%        if(abs(dy)<D) 
-%           dx=x(mm)-x(nn);                      
-%           dnm=dx.^2+dy.^2;          
-%           if(dnm<D^2)                
-%             dnm=sqrt(dnm);           
-%             F=-(D/dnm);     
-% 
-%             Fx(nn)= F.*dx;     
-%             Fx(mm)= - F.*dx;     
-%             Fy(nn)= F.*dy;    
-%             Fy(mm)=- F.*dy; 
-% 
-% %             Fx(nn)=Fx(nn) + F.*dx;     
-% %             Fx(mm)=Fx(mm) - F.*dx;     
-% %             Fy(nn)=Fy(nn) + F.*dy;    
-% %             Fy(mm)=Fy(mm) - F.*dy;
-% 
-%           end
-%         end
-%      end
-%  end
-%             end   
+ 
         end  
-% 
-%  for nn=1:N 
-%     for mm=nn+1:N    
-%        dy=y(mm)-y(nn);            
-%        if(abs(dy)<D) 
-%           dx=x(mm)-x(nn);                      
-%           dnm=dx.^2+dy.^2;          
-%           if(dnm<D^2)                
-%             dnm=sqrt(dnm);           
-%             F=-(D/dnm);     
-% 
-%             Fx(nn)= F.*dx;     
-%             Fx(mm)= - F.*dx;     
-%             Fy(nn)= F.*dy;    
-%             Fy(mm)=- F.*dy; 
-% 
-% %             Fx(nn)=Fx(nn) + F.*dx;     
-% %             Fx(mm)=Fx(mm) - F.*dx;     
-% %             Fy(nn)=Fy(nn) + F.*dy;    
-% %             Fy(mm)=Fy(mm) - F.*dy;
-% 
-%           end
-%         end
-%      end
-%  end
+
 
 aax=Fx./M;                
 ay=Fy./M;

@@ -1,2 +1,2 @@
 # my-projects
-Code that I have worked on 
+Some of the code that I have worked on 
